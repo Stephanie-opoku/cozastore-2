@@ -29,6 +29,14 @@ app.get('/blog', (req, res)=>{
     res.render('blog')
 })
 
+app.get('/product', (req, res)=>{
+    res.render('shop')
+})
+
+app.get('/shoping-cart', (req, res)=>{
+    res.render('features')
+})
+
 app.listen(port,()=>{
     console.log(`listening on port http://localhost:${port}`);
 });
